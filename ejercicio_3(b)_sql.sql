@@ -1,0 +1,2 @@
+SELECT cursos.enrollment_date ,count(cursos.user_id) AS usuarios_inscritos, cursos.course_id FROM data_science_cim.cursos
+	group by cursos.enrollment_date,cursos.course_id order by cursos.enrollment_date asc;
